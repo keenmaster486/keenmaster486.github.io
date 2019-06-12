@@ -1,0 +1,101 @@
+body
+{
+	min-height: 100vh;
+	background-image: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1) 75%), url('background.jpeg');
+}
+
+nav
+{
+	background-color: lightgrey;
+	width: 75%;
+	height: 10%;
+	text-align: center;
+	border: solid 2px;
+}
+
+.navlink
+{
+	color: black;
+	text-decoration: none;
+	font-family: 'Courier New', monospace;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.navlink-container
+{
+	background-color: white;
+	height: 25px;
+	width: 120px;
+	margin: 0px 10px 0px 10px;
+	display: inline-block;
+	border: solid 1px;
+}
+
+.navtitle
+{
+	display: inline-block;
+	margin: 0px 10% 0px 0px;
+	text-decoration: none;
+	color: black;
+	font-family: 'Courier New', monospace;
+	font-size: 18px;
+	letter-spacing: 5px;
+}
+
+a
+{
+	text-decoration: none;
+	color: black;
+
+}
+
+@media only screen and (max-width: 635px)
+{
+	.navtitle
+	{
+		margin: 0px 0px 0px 0px;
+	}
+}
+
+@media only screen and (max-width: 466px)
+{
+	.navtitle
+	{
+		font-size: 20px;
+	}
+}
+
+h2
+{
+	font-family: monospace;
+	font-size: 20px;
+	font-weight: normal;
+	text-align: center;
+}
+
+h3
+{
+	text-align: left;
+	font-family: monospace;
+	font-size: 18px;
+	font-weight: normal;
+	font-style: italic;
+}
+
+p
+{
+	font-family: monospace;
+	text-align: left;
+	font-size: 14px;
+}
+
+.mainbody
+{
+	border: 1px solid;
+	background: #EEEEEE;
+	width: 75%;
+	margin: 25px 0px 0px 0px;
+	padding: 25px;
+	text-align: left;
+}
