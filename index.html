@@ -3,89 +3,149 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="./main.css">
+	<link rel="stylesheet" type="text/css" href="./slideshow.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
 
-	<center>
-		<nav>
-			<div class="navtitle"><h1><a href="./index.html">COLLIN BROCKWAY</a></h1></div>
-			<div class="navlink-container"><a href="./projects.html" class="navlink">My Projects</a></div>
-			<div class="navlink-container"><a href="./about.html" class="navlink">About Me</a></div>
-		</nav>
-	</center>
+	<nav>
+		<div class="navtitle"><h1><a href="./index.html">Collin Brockway</a></h1></div>
+		<div class="navlink-container"><a href="#projects" class="navlink">PROJECTS</a></div>
+		<div class="navlink-container"><a href="#about" class="navlink">ABOUT</a></div>
+	</nav>
+
+	<div class="topthing"></div>
+
 
 	<center>
-		<div class="mainbody">
-			<h2>
-				<a href="./about.html">I am a software developer, tinkerer, and technology<br> enthusiast based in Boulder, CO, USA.</a>
-			</h2>
+		<div class="mainbody-container-1">
+			<div class="mainbody">
+				
+				<h1 class="header-main">
+					Hi, I'm Collin
+				</h1>
 
-			<h2><a href="./projects.html"><i><u>Check out my work!</u></i></a></h2>
+				<center>
+					<button class="button-remove" onClick="document.getElementById('about').scrollIntoView({behavior: 'smooth'});">I am a software developer, tinkerer, and technology enthusiast based in Boulder, CO, USA.</button>
+				</center>
+				<!-- <center>
+					<h2 class="highlighted-header-2">
+						<a href="./projects.html"><u>Portfolio</u></a>
+					</h2>
+				</center> -->
+			</div>
+		</div>
 
-			<hr>
+	<div class="divider"></div>
 
-			<h3>A little demonstration below of something cool I have made</h3>
-			<p>
-				The below demonstration is of a simple 2D platformer game engine
-				that I made using HTML Canvas and JavaScript. Check out the source
-				code <a href="https://github.com/keenmaster486/sei-game-project"><i><u>here!</u></i></a>
-				If you look through it you can see that everything is done in the
-				classes, and the entire main code consists of only three lines. This
-				is part of what makes it very well structured and easy to scale.
-			</p>
+
+	<div id="about" class="about-div">
+		As a software developer, I strife for elegance and efficiency
+		in everything that I do. I am proficient in C/C++, Java, JavaScript,
+		Node.js with Express, MongoDB, SQL, and in any other language
+		or framework I may learn along the way. Software development
+		is a journey of lifelong learning for me.<br>
+		<br>
+		I recently completed a 12-week intensive program at General Assembly
+		Denver, the Software Engineering Immersive, with an emphasis in
+		Node.js with Express, MongoDB, and Java.<br>
+		<br>
+		<a href="https://www.linkedin.com/in/collin-brockway-2aa62a170" class="highlighted-header-2">LinkedIn Profile</a>
+		<a href="https://github.com/keenmaster486" class="highlighted-header-2">GitHub</a>
+		<br><br><br>
+		Contact me via the email below to chat or discuss anything!
+		<br><br>
+		<img src="email.jpg">
+	</div>
+
+
+		<div id="projects" class="mainbody-container-2">
 
 			<center>
-				<iframe src="http://keenmaster486.github.io/sei-game-project" height=750 width=850></iframe>
+				<h2 class="highlighted-header-2">My Work</h2>
+				<p class="centered-text">Click on an image to be taken to the project page</p>
 			</center>
+			
+			<div class="slideshow-text-container">
+				<div class="slideshow-text-hidden">
+					Emphasis-DB<br>
+					<br>
+					At General Assembly, I had the privilege of working in a
+					team of three to build a database for the
+					<a href="http://emphasis.ai"><u>Emphasis AI</u></a>
+					project.<br>
+					<br>
+					Try it our for yourself - you can create an account
+					and add entries to the database.<br>
+					<br>
+					The server has bots built in that scrape content from
+					the internet.
+				</div>
+				<div class="slideshow-text-hidden">
+					Clean-Chat-App<br>
+					<br>
+					My final projects at General Assembly were focused on this
+					group and private chat app. The app is built with a decoupled
+					API and frontend, so that a client can easily be built for it
+					on any platform. The frontend for the web version linked to
+					here uses React, while the mobile app uses React Native.
+					Amusingly, I also was able to build a client for legacy
+					systems using Visual Basic 6.
+				</div>
+				<div class="slideshow-text-hidden">
+					ClassicMedia<br>
+					<br>
+					This is a blog and content sharing website with an emphasis
+					on compatibility. The site is built using Node.js with Express
+					and MongoDB, and uses two distinct frontends: one built with
+					modern HTML, CSS, and JavaScript, and intended for use with
+					modern browsers, and the other built with old school HTML
+					for use with legacy browsers that would not otherwise be able
+					to do anything useful on the Internet. (the site is at a
+					temporary URL for now)
+				</div>
+				<div class="clearfix"></div>
+			</div>
 
+			<div class="slideshow-container">
+				<a href="http://emphasisdb.herokuapp.com"><img class="slideshow-img slideshow-img-hidden" src="emphasis-db.png"></a>
+				<a href="http://clean-chat-app.herokuapp.com"><img class="slideshow-img slideshow-img-hidden" src="clean-chat-app.png"></a>
+				<a href="http://therealcasablanca.com"><img class="slideshow-img slideshow-img-hidden" src="classicmedia.png"></a>
+			</div>
+
+			<button class="slideshow-button" onClick="onPrevClick()"> < </button>
+			<button class="slideshow-button" onClick="onNextClick()"> > </button>
+
+
+
+			<div class="mainbody">
+				<center><h2 class="highlighted-header-2">Featured project</h2></center>
+				<p>
+					The below demonstration is of a simple 2D platformer game engine
+					that I made using HTML Canvas and JavaScript.
+					<a href="https://github.com/keenmaster486/sei-game-project"><u>Check out the source code here.</u></a>
+					If you look through it you can see that everything is done in the
+					classes, and the entire main code consists of only three lines. This
+					is part of what makes it very well structured and easy to scale.
+				</p>
+
+				<center>
+					<iframe src="http://keenmaster486.github.io/sei-game-project" height=720 width=850></iframe>
+				</center>
+
+			</div>
 		</div>
 	</center>
 
+	<div class="footer">
+		(C) 2019 Collin Brockway
+		<br><br>
+		<img src="email.jpg">
+	</div>
+
+	<script type="text/javascript" src="./slideshow.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <!DOCTYPE html>
-<html>
-<head>
-	<title>Collin Brockway</title>
-</head>
-
-<body>
-	<h1>Collin Brockway</h1>
-	<p>
-		I am a tinkerer, hobbyist, and technology enthusiast based in Boulder, CO, USA.<br>
-		<br>
-		Here is a partial list of the projects I am currently working on:
-	</p>
-	<ul>
-		<li><a href="http://classictechnology.herokuapp.com">Classic Technology Website</a>: a website designed for maximum compatibility with older browsers, for use with vintage computers.</li>
-	</ul>
-	<p>
-		Old projects:
-	</p>
-	<ul>
-			<li><a href="https://github.com/keenmaster486/Beep-Four">Keen Game Engine</a>: a generic 2D platformer game engine for MS-DOS, programmed in Quick Basic. A project which will eventually be resurrected in efficient C/C++ form.</li>
-	</ul>
-</body>
-</html>
- -->
