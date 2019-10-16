@@ -1,6 +1,6 @@
 .slideshow-container
 {
-	width: 60%;
+	width: 100%;
 	height: 30vw;
 	margin: 10px;
 }
@@ -46,7 +46,7 @@
 .slideshow-text-container
 {
 	float: right;
-	width: 20%;
+	width: 30%;
 	height: 400px;
 	margin: 0px 10% 0px 0px;
 	font-family: 'Montserrat', sans-serif;
